@@ -5,12 +5,12 @@ module.exports = {
     serverURL: process.env.BASE_SERVER_URL,
     clientURL: process.env.BASE_CLIENT_URL
   },
-  port: process.env.PORT || 3000,
+  port: process.env.PORT || 1000,
   database: {
     url: process.env.MONGO_URI
   },
   jwt: {
-    secret: process.env.JWT_SECRET,
+    secret: "mySuperSecretKey123",
     tokenLife: '7d'
   },
   mailchimp: {
